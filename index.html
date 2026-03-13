@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle East Interactive Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="popup-overlay" id="popup-overlay"></div>
+    <div id="popup-card" class="popup-card hidden">
+        <h2 id="popup-title"></h2>
+        <div id="popup-content"></div>
+    </div>
+    <div class="container">
+        <h1>Middle East War: Statistics</h1>
+        <div id="map"></div>
+        <div id="mobile-panel" class="mobile-panel hidden">
+            <h2 id="mobile-title"></h2>
+            <div id="mobile-content"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

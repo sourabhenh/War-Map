@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    padding: 30px;
+    background: #001D35;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.popup-card {
+    position: fixed;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    overflow: hidden;
+    max-width: 300px;
+    width: 80%;
+    z-index: 10000;
+    animation: slideIn 0.2s ease-out;
+    pointer-events: auto;
+}
+
+.popup-card.hidden {
+    display: none !important;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#popup-title,
+#mobile-title {
+    background: #001D35;
+    color: #fff;
+    margin: 0;
+    padding: 10px 14px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#popup-title::after,
+#mobile-title::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    flex: 0 0 36px;
+    background-image: url('icons\\EAGLE-INTELLIGENCE-REPORTS-LOGO.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#popup-content,
+#mobile-content {
+    padding: 12px;
+}
+
+.popup-content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 44px;
+    padding: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.popup-content-item:last-child {
+    border-bottom: none;
+}
+
+.popup-label {
+    font-weight: 600;
+    color: #333;
+    flex: 1;
+}
+
+.popup-label-wrap {
+    display: inline-flex;
+    align-items: stretch;
+    gap: 0;
+    min-width: 0;
+    flex: 1;
+}
+
+.popup-icon-box {
+    width: 44px;
+    height: auto;
+    flex: 0 0 44px;
+    border-radius: 0;
+    background: #d1d4d7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-icon-box.alt {
+    background: #b8bec1;
+}
+
+.popup-icon {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.popup-label-wrap .popup-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+
+.popup-content-item > .popup-value {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.popup-value {
+    font-size: 1.1em; 
+    font-weight: bold;
+    color: #A01C40;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.popup-overlay.visible {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.leaflet-container {
+    background: #e8f4f8;
+}
+
+.country-hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.mobile-panel {
+    display: none;
+    background: #fff;
+    padding: 0;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    max-height: 40vh;
+    overflow-y: auto;
+}
+.mobile-panel.visible {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #map {
+        height: 520px;
+    }
+
+    #popup-card { display: none !important; }
+}
+

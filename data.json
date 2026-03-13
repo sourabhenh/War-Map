@@ -1,0 +1,129 @@
+{
+  "Iran": {
+    "color": "#4E6277",
+    "shortDescription": "US & Israeli Attacks",
+    "ballisticMissiles": -1,
+    "cruiseMissiles": -1,
+    "drones": -1,
+    "aircraft": -1,
+    "impactDescription": "Casualties",
+    "killed": 1332,
+    "wounded": 12000
+  },
+  "Saudi Arabia": {
+    "color": "#4E6277",
+    "shortDescription": "Iranian Attacks",
+    "ballisticMissiles": 7,
+    "cruiseMissiles": -1,
+    "drones": 74,
+    "aircraft": -1,
+    "impactDescription": "Casualties",
+    "killed": 2,
+    "wounded": 12
+  },
+  "United Arab Emirates": {
+    "color": "#4E6277",
+    "shortDescription": "Iranian Attacks",
+    "ballisticMissiles": 238,
+    "cruiseMissiles": 8,
+    "drones": 1422,
+    "aircraft": 0,
+    "impactDescription": "Casualties",
+    "killed": 4,
+    "wounded": 112
+  },
+  "Kuwait": {
+    "color": "#264059",
+    "shortDescription": "Iranian Attacks",
+    "ballisticMissiles": 97,
+    "cruiseMissiles": -1,
+    "drones": 283,
+    "aircraft": -1,
+    "impactDescription": "Casualties",
+    "killed": 6,
+    "wounded": 35
+  },
+  "Qatar": {
+    "color": "#264059",
+    "shortDescription": "Iranian Attacks",
+    "ballisticMissiles": 101,
+    "cruiseMissiles": 3,
+    "drones": 39,
+    "aircraft": 2,
+    "impactDescription": "Casualties",
+    "killed": 0,
+    "wounded": 16
+  },
+  "Bahrain": {
+    "color": "#264059",
+    "shortDescription": "Iranian Attacks",
+    "ballisticMissiles": 95,
+    "cruiseMissiles": 0,
+    "drones": 164,
+    "aircraft": -1,
+    "impactDescription": "Casualties",
+    "killed": 1,
+    "wounded": 40
+  },
+  "Oman": {
+    "color": "#4E6277",
+    "shortDescription": "Iranian Attacks",
+    "ballisticMissiles": 0,
+    "cruiseMissiles": 0,
+    "drones": 3,
+    "aircraft": -1,
+    "impactDescription": "Casualties",
+    "killed": 1,
+    "wounded": 5
+  },
+  "Jordan": {
+    "color": "#4E6277",
+    "shortDescription": "Iranian Attacks",
+    "ballisticMissiles": 60,
+    "cruiseMissiles": 0,
+    "drones": 59,
+    "aircraft": -1,
+    "impactDescription": "Casualties",
+    "killed": 0,
+    "wounded": 14
+  },
+  "Israel": {
+    "color": "#4E6277",
+    "shortDescription": "Attacks from Iran and its proxies",
+    "ballisticMissiles": 591,
+    "cruiseMissiles": 0,
+    "drones": 1050,
+    "aircraft": -1,
+    "impactDescription": "Casualties",
+    "killed": 13,
+    "wounded": 2228
+  },
+  "United States": {
+    "color": "#4E6277",
+    "impactDescription": "Casualties",
+    "killed": 8,
+    "wounded": 18
+  },
+  "Lebanon": {
+    "color": "#4E6277",
+    "shortDescription": "Israeli Attacks",
+    "ballisticMissiles": -1,
+    "cruiseMissiles": -1,
+    "drones": -1,
+    "aircraft": -1,
+    "impactDescription": "Casualties",
+    "killed": 394,
+    "wounded": 1000
+  },
+  "Iraq": {
+    "color": "#4E6277",
+    "shortDescription": "US, Israel & Iranian Attacks",
+    "ballisticMissiles": -1,
+    "cruiseMissiles": -1,
+    "drones": -1,
+    "aircraft": -1,
+    "impactDescription": "Casualties",
+    "killed": 6,
+    "wounded": 7
+  }
+}
